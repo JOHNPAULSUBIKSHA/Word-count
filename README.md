@@ -22,23 +22,19 @@ End the program.
 ```
 ## DEVELOPED BY: John Paul J
 ## REGESTER NUMBER: 212223230093
-num_words =0
-file1 = open("text.txt", "r")
-with open('text.txt','r') as file1:
-    for i in file1:
-        word =i.split()
-        num_words += len(word)
-print("Number of words={}".format(num_words))
-```
-## Text File:
-```
-with open("text.txt",'w')as fp:
-  fp.write("Hello World")
-  fp.write("\nWelcome to Python")
-  fp.write("\nHave a Good Day")
+def program():
+    count=0
+    with open("john.txt","r") as f:
+        for data in f:
+            words=data.split()
+            for word in words:
+                count+=1
+    print("Ttotal number of words:",count)
+program()
+
 ```
 ### OUTPUT:
-![output](./11.png)
+![Alt text](output.png)
 
 ## RESULT:
 Thus the program is written to find the word count from a text.
